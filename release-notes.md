@@ -1,3 +1,69 @@
+
+## Version 01.02.00.532 Release Notes
+
+#### New for Listener v1.2
+* Listener now offers self-service MQTT subscription for IoT and lightweight messaging systems.
+*  Target-system errors caused by improperly formatted messages are displayed in the targets cards and pause data writing for that target.
+* Stability enhancements.
+
+#### Features
+* Easy to navigate web app user interface (UI) based on material design.
+* Powerful user web app with a dashboard to monitor all your real-time data in one view.
+* Create and view sources for real-time HTTP and MQTT ingestion via UI and RESTful APIs.
+  * Authenticated users can create data sources.
+  * Authenticated users can view/find/search/favorite/co-own data sources.
+  * Data can be sent in any format.
+  * Supports single record or multiple record data, up to 1MB per record.
+  * Listener will provide acknowledgement of receipt of data.
+  * Map metadata and data to specific columns in target (for TD and Aster).
+  * Owners of the data source can lock the target and data source from changes.
+  * Monitor volume metrics (record size and count) per source over a day, hour, week or month.
+* Write source data to UDA and real-time targets via UI or RESTful APIs.
+  * Owners of a data source can add one or more targets (using pre-configured Systems.)
+  * Support writing data in real-time, batch by records, and batch by time to the UDA.
+  * Support writing data in real-time as Broadcast Streamers for 3rd party systems and complex event processors.
+  * Guaranteed delivery; at-least once semantics.
+  * Prebuilt backpressure support for ingestion spikes and retention policies.
+  * Pausing/resuming of writing to targets.
+  * Monitor latency metrics of each source target(s) over a day, hour, week or month.
+* Administrator role capabilities via UI and RESTful APIs.
+  * Security controls include LDAP integration for authentication, security.
+  * Provide roles for administrator, user and source owner.
+  * OAUTH2 authentication for services.
+  * Monitor and manage system targets and all user sources and associated targets.
+  * Monitor and manage the platform and system services.
+  * Generates email alerts for target error or service failures (if SMTP provided via API.)
+
+#### Requirements
+* Tested on the following systems:
+ * Hadoop 2.3 - 2.6 (CDH 5.2+, HDP 2.3+)
+ * Aster 6.20+
+ * Teradata 15.10+
+ * Hbase 1.1.2+
+* For general requirements, go to: http://docs.uda.io/installation/prerequisites.html
+* For Openstack requirements, go to: http://docs.uda.io/installation/openstack.html
+* For Amazon Web Services requirements, go to: http://docs.uda.io/installation/aws.html
+
+#### Known Limitations
+* Licensing in Admin screen is disabled.  Digital licensing will activate in a future update.
+* Teradata and Aster tables must be created prior to using Listener.
+* No Kerberos for HDFS/Hadoop.
+* Support Systems and Writer Configurations - http://docs.uda.io/user-guide/supported-systems.html
+* Listener scaling/sizing must be defined at install time.
+* Data duplication may occur. Listener will support exactly once semantics in a future update.
+
+#### Errata
+* UDALIS-2053	UI - Unable to edit a System which was created through api
+* UDALIS-2030	UI - While adding a target validation error is displayed with stacktrace
+* UDALIS-2026	AppServices 500 response on Create websocket
+* UDALIS-2023	REST Ingest 500 with 1 MB message
+* UDALIS-2022	Large MQTT messages not handled correctly when greater than 8KB
+* UDALIS-2013	Ingest Intermittently Gives Unauthorized Response
+* UDALIS-2117	Intermittent 503 issues with websockets
+
+Workarounds may exist for these issues.  Please reference https://listener.docs.uda.io/troubleshooting/intro.html or contact Teradata @ Your Service.  All errata is schedule to be fixed in a future release.
+
+
 ## Version 01.01.00.424
 #### New for Listener v1.1
 * Introducing installation support for Listener on AWS in addition to Openstack.
