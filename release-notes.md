@@ -40,15 +40,15 @@
  * Aster 6.20+
  * Teradata 15.10+
  * Hbase 1.1.2+
-* For general requirements, go to: http://docs.uda.io/installation/prerequisites.html
-* For Openstack requirements, go to: http://docs.uda.io/installation/openstack.html
-* For Amazon Web Services requirements, go to: http://docs.uda.io/installation/aws.html
+* For general requirements, go to: http://listener.docs.uda.io/installation/prerequisites.html
+* For Openstack requirements, go to: http://listener.docs.uda.io/installation/openstack.html
+* For Amazon Web Services requirements, go to: http://listener.docs.uda.io/installation/aws.html
 
 #### Known Limitations
 * Licensing in Admin screen is disabled.  Digital licensing will activate in a future update.
 * Teradata and Aster tables must be created prior to using Listener.
 * No Kerberos for HDFS/Hadoop.
-* Support Systems and Writer Configurations - http://docs.uda.io/user-guide/supported-systems.html
+* Support Systems and Writer Configurations - http://listener.docs.uda.io/user-guide/supported-systems.html
 * Listener scaling/sizing must be defined at install time.
 * Data duplication may occur. Listener will support exactly once semantics in a future update.
 
@@ -72,7 +72,7 @@ Workarounds may exist for these issues.  Please reference https://listener.docs.
 * View more information about the Listener deployment with an improved administrator status page that now includes status for Writers, Listener Services, Agent Resources.
 * New and improved filters for administrators on the Mange Targets view and for users on the Sources view.
 * Code samples are always available in the source view.
-* New installation process - please go to http://docs.uda.io for more information.
+* New installation process - please go to http://listener.docs.uda.io for more information.
 
 #### Features
 * Easy to navigate web app user interface (UI) based on material design.
@@ -108,15 +108,15 @@ Workarounds may exist for these issues.  Please reference https://listener.docs.
  * Aster 6.20+
  * Teradata 15.10+
  * Hbase 1.1.2+
-* For general requirements, go to: http://docs.uda.io/installation/prerequisites.html
-* For Openstack requirements, go to: http://docs.uda.io/installation/openstack.html
-* For Amazon Web Services requirements, go to: http://docs.uda.io/installation/aws.html
+* For general requirements, go to: http://listener.docs.uda.io/installation/prerequisites.html
+* For Openstack requirements, go to: http://listener.docs.uda.io/installation/openstack.html
+* For Amazon Web Services requirements, go to: http://listener.docs.uda.io/installation/aws.html
 
 #### Known Limitations
 * Licensing in Admin screen is disabled.  Listener licensing will activate in a future update.
 * Teradata and Aster tables must be created prior to using Listener.
 * No Kerberos for HDFS/Hadoop
-* Support Systems and Writer Configurations - http://docs.uda.io/user-guide/supported-systems.html
+* Support Systems and Writer Configurations - http://listener.docs.uda.io/user-guide/supported-systems.html
 * Listener scaling/sizing must be defined at install time.
 * Data duplication may occur. Listener will support exactly once semantics in a future update.
 
@@ -193,7 +193,7 @@ Workarounds may exist for these issues.  Please reference https://listener.docs.
 * LDAP configuration information
 * SMTP internal relay (email notification)
 * UI supported on evergreen web browsers
-* More information - http://docs.uda.io/installation/prerequisites.html
+* More information - http://listener.docs.uda.io/installation/prerequisites.html
 * Licensing in Admin screen is disabled. Listener licensing will activate in a future update.
 * Systems
   * Data streaming and writing available for the following systems:
@@ -204,7 +204,7 @@ Workarounds may exist for these issues.  Please reference https://listener.docs.
   * Support for data streaming to 3rd party systems is coming soon.
   * Teradata and Aster tables must be created prior to using Listener.
   * No Kerberos for HDFS/Hadoop.
-  * More information - http://docs.uda.io/user-guide/supported-systems.html
+  * More information - http://listener.docs.uda.io/user-guide/supported-systems.html
 * Listener scaling or sizing must be defined at install time, for example VM definitions for both Openstack flavors and number of instances.
 * Data duplication or loss might occur when a target writer is shut down. Listener will support at least once in an update.
 
